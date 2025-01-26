@@ -7,6 +7,8 @@ while "_" in kata_yangditebak:
     if len(tebakan) != 1 or not tebakan.isalpha():
         print("Salah. Masukkan satu huruf saja.")
         continue
+    if tebakan in kata_yangditebak:
+        print("Anda sudah memasukkan huruf ini, silakan input huruf")
     if tebakan in kata_rahasia:
         print("Tebakan Anda benar!")
         for i in range(len(kata_rahasia)):
